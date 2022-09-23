@@ -76,6 +76,16 @@ $(document).ready(function(){
     newBarcode();
 });
 
+function DownloadCanvasAsImage(){
+    let downloadLink = document.createElement('a');
+    downloadLink.setAttribute('download', 'Barcode.png');
+    let canvas = document.getElementById('barcode');
+    let dataURL = canvas.toDataURL('image/png');
+    let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
+    downloadLink.setAttribute('href', url);
+    downloadLink.click();
+}
+
 var newBarcode = function() {
     //Convert to boolean
     $("#barcode").JsBarcode(
