@@ -41,15 +41,15 @@
           <div class="col-md-10 col-md-offset-1">
             <div class="input-group margin-bottom-sm">
               <span class="input-group-addon"><i class="fa fa-barcode fa-fw"></i></span>
-              <input class="form-control" id="userInput" type="text" value="Example 1234" placeholder="Barcode" autofocus>
+              <input class="form-control" id="userInput" type="text" value="1234567890128" placeholder="Barcode" autofocus>
               <span class="input-group-btn">
-                <select class="btn barcode-select" id="barcodeType" title="CODE128">
+                <select class="btn barcode-select" id="barcodeType" title="EAN13">
+                  <option value="EAN13">EAN13</option>
+                  <option value="EAN8">EAN8</option>
                   <option value="CODE128">CODE128 auto</option>
                   <option value="CODE128A">CODE128 A</option>
                   <option value="CODE128B">CODE128 B</option>
                   <option value="CODE128C">CODE128 C</option>
-                  <option value="EAN13">EAN13</option>
-                  <option value="EAN8">EAN8</option>
                   <option value="UPC">UPC</option>
                   <option value="CODE39">CODE39</option>
                   <option value="ITF14">ITF14</option>
@@ -86,7 +86,7 @@
         <!-- Background (color) -->
         <div class="row">
           <div class="col-md-2 col-xs-12 col-md-offset-1 description-text"><p>Background</p></div>
-          <div class="col-md-7 col-xs-11 input-container"><input id="background-color" class="form-control color" value="#FFFFFF"/></div>
+          <div class="col-md-7 col-xs-11 input-container"><input id="background-color" class="form-control color" value="rgba(255, 255, 255, 0)"/></div>
           <div class="col-md-1 col-xs-1 value-text"></div>
         </div>
         <!-- Line color -->
